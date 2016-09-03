@@ -2,7 +2,7 @@
 
 Examples to see how to improve GPU performance. This repo contains some benchmarks which have some important performance issues(e.g. uncoalesced memory accesses, thread divergence) that could be addressed throught code optimizations.
 
-### mem_coalesced
+### 1. Folder: mem_coalesced
 	trans.cu: memory access for stores is not coalesced;
 	trans_opt.cu: uses 2D surface memory for writting.
 #### To compile:
@@ -10,7 +10,7 @@ Examples to see how to improve GPU performance. This repo contains some benchmar
 #### To run:
 	./run.sh	
 
-### thread_divergency
+### 2. Folder: thread_divergency
 	knnjoin.cu: has thread divergency problem in kernel KNNQuery_base;
 	knnjoin_opt.cu: uses the reorder technique to reduce the thread divergency for kernel KNNQuery_base;
 
