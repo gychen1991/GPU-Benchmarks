@@ -1,6 +1,6 @@
 # GPU-Benchmarks
 
-## Benchmarks with have some important performance issues(e.g. uncoalesced memory accesses, thread divergence) that could be addressed throught code optimizations.
+Examples to see how to improve GPU performance. This repo contains some benchmarks which have some important performance issues(e.g. uncoalesced memory accesses, thread divergence) that could be addressed throught code optimizations.
 
 ### mem_coalesced
 	trans.cu: memory access for stores is not coalesced;
